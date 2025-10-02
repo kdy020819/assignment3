@@ -24,7 +24,7 @@ do
 	until [ $j -gt $col ]
 	do
 		result=`expr $i \* $j`
-		echo -e  "$i*$j=$result \c "
+		echo -en "$i*$j=$result\t"
 		j=`expr $j + 1`
 	done
 	
